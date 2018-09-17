@@ -1,0 +1,13 @@
+{
+    "name": "LSF",
+    "description": "LSF public dashboard",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "require": {}
+}

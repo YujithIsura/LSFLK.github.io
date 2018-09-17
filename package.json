@@ -1,0 +1,38 @@
+{
+  "name": "LSF",
+  "version": "1.0.0",
+  "description": "LSF public dashboard",
+  "main": "index.html",
+  "directories": {
+    "UI": "root"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "gulp open-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/LankaSoftwareFoundation/"
+  },
+  "keywords": [
+    "Lanka Software Foundation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "#"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-open": "^3.0.1"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "orgchart": "^2.1.2"
+  }
+}
