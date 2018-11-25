@@ -30,7 +30,7 @@
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo">
-        <a href="http://opensource.lk" class="simple-text logo-normal">
+        <a href="#" class="simple-text logo-normal">
           LSF
         </a>
       </div>
@@ -39,7 +39,7 @@
           <li class="nav-item active  ">
             <a class="nav-link" href="index.html">
               <i class="material-icons">dashboard</i>
-              <p>Live Projects</p>
+              <p>Active Projects</p>
             </a>
           </li>
           <!-- <li class="nav-item ">
@@ -87,6 +87,65 @@
               <div id="chart-container"></div>
             </div>
           </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">layers</i>
+                    </div>
+                    <p class="card-category">Source code</p>
+                    <a href="https://github.com/LSFLK" >
+                      <h3 class="card-title">Github.com/LSFLK
+                    </h3>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <div class="stats">
+                      <i class="material-icons text-danger">warning</i>
+                      <a href="#pablo">Get More Space...</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">email </i>
+                    </div>
+                    <p class="card-category">Discuss</p>
+                    <h3 class="card-title">Mail lists</h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                    </div>
+                    <div class="stats">
+                        <!-- <i class="material-icons text-danger">mail</i>
+                        <a href="#pablo"> Architecture</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header card-header-danger card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">contact_mail</i>
+                    </div>
+                    <p class="card-category">Email to us</p>
+                    <h3 class="card-title">mail@opensource.lk</h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
         </div>
       </div>
       <footer class="footer">
@@ -116,6 +175,11 @@
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       md.initDashboardPageCharts();
+
+      $('.node').on('click', function(event) {
+          var id = $(this).attr('id');
+          console.log("kkkkk :"+id);
+      });
 
     });
   </script>
