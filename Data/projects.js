@@ -12,7 +12,8 @@ var datasource = {
     },
     { 'name': 'MoE', 'title': 'HR system' ,'className': 'main-project',
       'children': [
-        { 'name': 'SLEAS', 'title': 'SLEAS HR System' , 'className': 'sub-project'}
+        { 'name': 'SLEAS', 'title': 'SLEAS HR System' , 'className': 'sub-project'},
+        { 'name': 'SIS', 'title': 'Student info Mgmt.' , 'className': 'sub-project'}
       ]
     },
     { 'name': 'Identity', 'title': 'Common component' ,'className': 'main-project',
@@ -22,7 +23,8 @@ var datasource = {
     },
     { 'name': 'EC', 'title': 'Election Commission' ,'className': 'main-project',
     'children': [
-      { 'name': 'Nomination', 'title': 'Nomination system' , 'className': 'sub-project'}
+      { 'name': 'Nomination', 'title': 'Nomination system' , 'className': 'sub-project'},
+      { 'name': 'Incident Mgmt.', 'title': 'Incident Management' , 'className': 'sub-project'}
     ]
     },
   ]
