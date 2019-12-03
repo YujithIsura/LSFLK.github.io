@@ -673,7 +673,7 @@ section#contact {
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#contact .section-heading, a > .lead {
     color: #fff;
 }
 
