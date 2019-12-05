@@ -2,6 +2,230 @@
 title: About | LSF
 layout: single-page
 permalink: /about/
+
+##---------------
+## board memebers
+##---------------
+board:
+- name: Dr. Sanjiva Weerawarana
+  pic: man
+  position: Chairman
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Dr. Srinath Perera
+  pic: man
+  position: VP of Research, WSO2
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Prof. Lalith Gamage
+  pic: man
+  position: CEO, SLIIT
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Prof. Louiqa Raschid
+  pic: woman1
+  position: University of Maryland, USA
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Mano Sekaram
+  pic: man
+  position: CEO, 99X
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Prof. Rohan Samarajiva
+  pic: man
+  position: Chairman, ICTA & LIRNEAsia
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Prof. Gihan Dias
+  pic: man
+  position: University of Moratuwa and Chairman, LK Domain Registry
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+
+##-------------
+## team members
+##-------------
+team:
+- name: Iromi Peiris
+  pic: woman1
+  position: Administrative Officer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Sherazad Hamit
+  pic: woman1
+  position: Program Director
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Mohamed Nizar
+  pic: man
+  position: Senior Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Clement Fernando
+  pic: man
+  position: Senior Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Kosala Gangabadage
+  pic: man
+  position: Senior Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Dinuka De Silva
+  pic: man
+  position: Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Yujith Isura
+  pic: man
+  position: Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Umayanga Gunawardhana
+  pic: man
+  position: Software Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Tharindu Peiris
+  pic: man
+  position: Senior Research Engineer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+    
+##-----------
+## supporters
+##-----------
+supporters:
+- name: StartupX Foundry
+  pic: sxf-logo.png
+  url: ""
+- name: WSO2
+  pic: wso2-logo.png
+  url: ""
+- name: University of Maryland
+  pic: umd-logo.png
+  url: ""
+- name: LK Domain Registry
+  pic: lk-domain-registry-logo.png
+  url: ""
+- name: Ceynet
+  pic: ceynet-logo.png
+  url: ""
+
+
+##----------
+## accolades
+##----------
+accolades:
+- name: Free Software Award 2008
+  project: Project Sahana
+  pic: sahana.jpg
+- name: eSwabhimani 2009 - Special Mention
+  project: Project Dcache
+  pic: Dcache.jpg
+- name: The Manthan Award South Asia 2010
+  project: Project Ninithi
+  pic: manthan_ninithi.jpg
+- name: eSwabhimani 2019 - Winner
+  project: Project Ninithi
+  pic: eSwabhimani_ninithi.jpg
+
 ---
 
 <!-- About Section -->
@@ -10,7 +234,7 @@ permalink: /about/
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About LSF?</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
             <div class="row">
@@ -19,10 +243,13 @@ permalink: /about/
                 <p>LSF has always been funded by grants from various organizations, both in Sri Lanka and outside.</p>
                 <p>In August 2018, LSF changed course from creating technology to helping the Government of Sri Lanka deploy technology to improve governance and the quality of services provided to citizens. This project is called Code for Sri Lanka.</p>
             </div>
+
+            <!-- board members -->
             <div class="row">
                 <h3>Board</h3>
-                {% for member in site.people %}
-                        <div class="col-sm-4">
+                <hr/>
+                {% for member in page.board %}
+                        <div class="col-sm-3">
                             <div class="team-member">
                                 <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
@@ -41,5 +268,61 @@ permalink: /about/
                         </div>
                         {% endfor %}
             </div>
+
+            <!-- team memebers -->
+            <div class="row">
+                <h3>Team</h3>
+                <hr/>
+                {% for member in page.team %}
+                        <div class="col-sm-3">
+                            <div class="team-member">
+                                <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                                <h4>{{ member.name }}</h4>
+                                <p class="text-muted">{{ member.position }}</p>
+                                <ul class="list-inline social-buttons">
+                                    {% for network in member.social %}
+                                    <li>
+                                        <a href="{{ network.url }}">
+                                            <i class="fa fa-{{ network.title }}"></i>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+        
+                                </ul>
+                            </div>
+                        </div>
+                        {% endfor %}
+            </div>
+
+            <!-- our supporters -->
+            <div class="row">
+              <h3>Supporters</h3>
+              <hr/>
+              {% for item in page.supporters %}
+                <div class="col-sm-3">
+                    <div class="team-member supporters">
+                        <img src="{{ site.baseurl }}/img/logos/{{ item.pic }}" class="img-responsive" alt="" style="border: none;">
+                        <h4>{{ item.name }}</h4>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+
+
+            <!-- accolades -->
+            <div class="row">
+              <h3>Accolades</h3>
+              <hr>
+              {% for item in page.accolades %}
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="{{ site.baseurl }}/img/accolades/{{ item.pic }}" class="img-responsive" alt="" >
+                        <h4>{{ item.name }}</h4>
+                        <p class="text-muted">{{ item.project }}</p>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+
         </div>
     </section>
