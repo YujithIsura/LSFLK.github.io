@@ -642,6 +642,10 @@ section h3.section-subheading {
     }
 }
 
+.supporters {
+    height: 100px;
+}
+
 .team-member {
     margin-bottom: 50px;
     text-align: center;
