@@ -30,6 +30,15 @@ body {
     color: #{{ site.data.template.color.primary }};
 }
 
+.cards div {
+    padding: 10px 15px
+}
+.btn-card {
+    width: 100%;
+    height: 150px;
+    padding: 50px 5px;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -366,6 +375,10 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+#projects h4 {
+    padding-top: 2rem;
 }
 
 #portfolio .portfolio-item {
