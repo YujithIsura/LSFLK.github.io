@@ -10,6 +10,11 @@ body {
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
+blockquote footer {
+    padding: 0px;
+    text-align: right;
+}
+
 .full-width {
     width: 100%;
 }
