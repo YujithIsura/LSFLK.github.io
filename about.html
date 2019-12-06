@@ -7,81 +7,32 @@ layout: single-page
 ##---------------
 board:
 - name: Dr. Sanjiva Weerawarana
-  pic: man
+  pic: 10
   position: Chairman
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Dr. Srinath Perera
-  pic: man
+  pic: 11
   position: VP of Research, WSO2
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Prof. Lalith Gamage
-  pic: man
+  pic: 12
   position: CEO, SLIIT
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Prof. Louiqa Raschid
-  pic: woman
+  pic: 13
   position: University of Maryland, USA
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Mano Sekaram
-  pic: man
+  pic: 14
   position: CEO, 99X
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Prof. Rohan Samarajiva
-  pic: man
+  pic: 15
   position: Chairman, ICTA & LIRNEAsia
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Prof. Gihan Dias
-  pic: man
+  pic: 16
   position: University of Moratuwa and Chairman, LK Domain Registry
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 
 ##-------------
@@ -89,103 +40,40 @@ board:
 ##-------------
 team:
 - name: Iromi Peiris
-  pic: woman
+  pic: 8
   position: Administrative Officer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Sherazad Hamit
-  pic: woman
+  pic: 9
   position: Program Director
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Mohamed Nizar
   pic: 4
   position: Senior Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Clement Fernando
   pic: 6
   position: Senior Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Kosala Gangabadage
   pic: 2
   position: Senior Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Dinuka De Silva
   pic: 3
   position: Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Yujith Isura
   pic: 1
   position: Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Umayanga Gunawardhana
   pic: 5
   position: Software Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
 
 - name: Tharindu Peiris
-  pic: man
+  pic: 7
   position: Senior Research Engineer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
     
 ##-----------
 ## supporters
@@ -250,7 +138,7 @@ accolades:
                 {% for member in page.board %}
                         <div class="col-sm-3">
                             <div class="team-member">
-                                <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+                                <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
                                 <p class="text-muted">{{ member.position }}</p>
                                 <ul class="list-inline social-buttons">
@@ -275,7 +163,7 @@ accolades:
                 {% for member in page.team %}
                         <div class="col-sm-3">
                             <div class="team-member">
-                                <img src="{{ site.baseurl }}/img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+                                <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
                                 <p class="text-muted">{{ member.position }}</p>
                                 <ul class="list-inline social-buttons">
