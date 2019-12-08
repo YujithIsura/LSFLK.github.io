@@ -44,6 +44,11 @@ blockquote footer {
     padding: 50px 5px;
 }
 
+.brand-logo {
+    width: 200px;
+    margin-top: -25px;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
