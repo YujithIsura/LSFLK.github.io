@@ -302,7 +302,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/lsfback.jpeg');
+    background-image: url('{{ site.baseurl }}/img/landing-image1.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
