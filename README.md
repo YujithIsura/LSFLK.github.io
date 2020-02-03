@@ -1,30 +1,16 @@
-Agency Jekyll theme
-====================
 
 Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
-# How to use
+# How to run locally
 
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
+1. Make sure jekyll is installed (https://jekyllrb.com/docs/installation/) 
+2. start server on root folder
+```
+bundle exec jekyll serve
+```
 
 
-# Demo
+# Deployment
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+This is automatically does by Github whenever change of file take place.
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
