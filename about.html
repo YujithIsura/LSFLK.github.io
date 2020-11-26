@@ -42,12 +42,28 @@ team:
   pic: 4
   position: Senior Software Engineer
 
-- name: Clement Fernando
-  pic: 6
-  position: Senior Software Engineer
-
 - name: Kosala Gangabadage
   pic: 2
+  position: Senior Software Engineer
+
+- name: Umayanga Gunawardhana
+  pic: 5
+  position: Software Engineer
+
+##-------------
+## alumni
+##-------------
+alumni:
+- name: Tharindu Madushanka
+  pic: 7
+  position: Senior Software Engineer
+
+- name: Anushka Uditha
+  pic: anushka
+  position: Senior Software Engineer
+
+- name: Clement Fernando
+  pic: 6
   position: Senior Software Engineer
 
 - name: Dinuka De Silva
@@ -56,10 +72,6 @@ team:
 
 - name: Yujith Isura
   pic: 1
-  position: Software Engineer
-
-- name: Umayanga Gunawardhana
-  pic: 5
   position: Software Engineer
 
 - name: Janith Silva
@@ -153,6 +165,31 @@ accolades:
                 <h3>Team</h3>
                 <hr/>
                 {% for member in page.team %}
+                        <div class="col-sm-3">
+                            <div class="team-member">
+                                <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+                                <h4>{{ member.name }}</h4>
+                                <p class="text-muted">{{ member.position }}</p>
+                                <ul class="list-inline social-buttons">
+                                    {% for network in member.social %}
+                                    <li>
+                                        <a href="{{ network.url }}">
+                                            <i class="fa fa-{{ network.title }}"></i>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+        
+                                </ul>
+                            </div>
+                        </div>
+                        {% endfor %}
+            </div>
+
+            <!-- alumni -->
+            <div class="row">
+                <h3>Alumni</h3>
+                <hr/>
+                {% for member in page.alumni %}
                         <div class="col-sm-3">
                             <div class="team-member">
                                 <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
