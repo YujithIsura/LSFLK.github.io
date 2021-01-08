@@ -54,18 +54,6 @@ team:
   pic: nipunav
   position: Software Engineer
 
-- name: Gayani Abeykoon
-  pic: gayania
-  position: Intern - Software Engineer
-
-- name: Nirmani Warakaulla
-  pic: nirmaniw
-  position: Intern - Software Engineer
-
-- name: Pabasara Patabendi
-  pic: pabasarap
-  position: Intern - Software Engineer
-
 - name: Sennen Randika De Almeida
   pic: sennenr
   position: Intern - Software Engineer
@@ -74,27 +62,49 @@ team:
 ## alumni
 ##-------------
 alumni:
-- name: Tharindu Madushanka
-  pic: 7
+- name: Gayani Abeykoon
+  pic: gayania
+  project: Ministry of Education's Project
 
-- name: Tharanga Rajapaksha
-  pic: tharanga
+- name: Nirmani Warakaulla
+  pic: nirmaniw
+  project: Ministry of Education's Project
 
-- name: Anushka Uditha
-  pic: anushka
-
-- name: Clement Fernando
-  pic: 6
-
-- name: Dinuka De Silva
-  pic: 3
-
-- name: Yujith Isura
-  pic: 1
+- name: Pabasara Patabendi
+  pic: pabasarap
+  project: Ministry of Education's Project
 
 - name: Janith Silva
   pic: 17
+  project: Ministry of Education's Project
 
+- name: Clement Fernando
+  pic: 6
+  project: Election Comission's Project
+
+- name: Dinuka De Silva
+  pic: 3
+  project: Election Comission's Project
+
+- name: Yujith Isura
+  pic: 1
+  project: Election Comission's Project
+
+- name: Tharanga Rajapaksha
+  pic: tharanga
+  project: Copper
+
+- name: Anushka Uditha
+  pic: anushka
+  project: Copper
+
+- name: Tharindu Madushanka
+  pic: 7
+  project: Karsha
+
+- name: Dr Srinath Perera
+  pic: 11
+  project: AXIS
     
 ##-----------
 ## supporters
@@ -211,7 +221,7 @@ accolades:
                             <div class="team-member">
                                 <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
                                 <h4>{{ member.name }}</h4>
-                                <p class="text-muted">{{ member.position }}</p>
+                                <p class="text-muted">{{ member.project }}</p>
                                 <ul class="list-inline social-buttons">
                                     {% for network in member.social %}
                                     <li>
