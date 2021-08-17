@@ -88,6 +88,11 @@ h6 {
     font-weight: 700;
 }
 
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;;
+}
+
 .img-centered {
     margin: 0 auto;
 }
