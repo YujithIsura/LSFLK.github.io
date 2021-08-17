@@ -100,6 +100,11 @@ h6 {
     background-color: #222;
 }
 
+.bg-none,
+.bg-none li:hover {
+    background: none;
+}
+
 .btn-danger {
     border-color: #{{ site.data.template.color.danger }};
     text-transform: uppercase;
@@ -277,6 +282,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
+    background: none;
     color: #{{ site.data.template.color.primary }};
 }
 
