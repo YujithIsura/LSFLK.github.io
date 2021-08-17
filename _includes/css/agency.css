@@ -100,6 +100,31 @@ h6 {
     background-color: #222;
 }
 
+.btn-danger {
+    border-color: #{{ site.data.template.color.danger }};
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-weight: 700;
+    color: #fff;
+    background-color: #{{ site.data.template.color.danger }};
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+    border-color: #{{ site.data.template.color.danger }};
+    color: #fff;
+    background-color: #{{ site.data.template.color.dangerh }};
+}
+
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+    background-image: none;
+}
+
 .btn-primary {
     border-color: #{{ site.data.template.color.primary }};
     text-transform: uppercase;

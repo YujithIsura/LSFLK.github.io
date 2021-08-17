@@ -5,6 +5,8 @@ color:
   secondary-dark: 333
   muted: 777
   black: 333
+  danger: 8e1003
+  dangerh: a01506
 
 # Font Families
 font:
