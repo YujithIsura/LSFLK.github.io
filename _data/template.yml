@@ -7,6 +7,7 @@ color:
   black: 333
   danger: 8e1003
   dangerh: a01506
+  danger-light: 8e100329
 
 # Font Families
 font:

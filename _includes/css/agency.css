@@ -88,9 +88,45 @@ h6 {
     font-weight: 700;
 }
 
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.my-6 {
+    margin-top: 6em;
+    margin-bottom:6rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .px-3 {
     padding-left: 3rem;
     padding-right: 3rem;;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.py-6 {
+    padding-top: 6em;
+    padding-bottom:6rem;
 }
 
 .img-centered {
@@ -99,6 +135,10 @@ h6 {
 
 .bg-light-gray {
     background-color: #f7f7f7;
+}
+
+.bg-light-danger {
+    background-color: #{{ site.data.template.color.danger-light }};;
 }
 
 .bg-darkest-gray {
