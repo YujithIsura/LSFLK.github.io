@@ -174,65 +174,61 @@ accolades:
             <div class="row">
                 <h3>Board</h3>
                 <hr/>
+                <div class="row row-eq-height">
                 {% for member in page.board %}
-                        <div class="col-sm-3">
-                            <div class="team-member">
-                                <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
-                                <h4>{{ member.name }}</h4>
-                                <p class="text-muted">{{ member.position }}</p>
-                                <ul class="list-inline social-buttons">
-                                    {% for network in member.social %}
-                                    <li>
-                                        <a href="{{ network.url }}">
-                                            <i class="fa fa-{{ network.title }}"></i>
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-        
-                                </ul>
-                            </div>
-                        </div>
-                        {% endfor %}
+                  <div class="col-sm-3">
+                      <div class="team-member">
+                          <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+                          <h4>{{ member.name }}</h4>
+                          <p class="text-muted">{{ member.position }}</p>
+                          <ul class="list-inline social-buttons">
+                              {% for network in member.social %}
+                              <li>
+                                  <a href="{{ network.url }}">
+                                      <i class="fa fa-{{ network.title }}"></i>
+                                  </a>
+                              </li>
+                              {% endfor %}
+  
+                          </ul>
+                      </div>
+                  </div>
+                  {% endfor %}
+                </div>
             </div>
 
             <!-- team memebers -->
             <div class="row" id="team">
                 <h3>Our People</h3>
                 <hr/>
+                <div class="row row-eq-height">
                 {% for member in page.team %}
-                        <div class="col-sm-3">
-                            <div class="team-member">
-                                <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
-                                <h4>{{ member.name }}</h4>
-                                <p class="text-muted">{{ member.position }}</p>
-                                <ul class="list-inline social-buttons">
-                                    {% for network in member.social %}
-                                    <li>
-                                        <a href="{{ network.url }}">
-                                            <i class="fa fa-{{ network.title }}"></i>
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-        
-                                </ul>
-                            </div>
-                        </div>
+                  <div class="col-sm-3 text-center team-member">
+                      <div class="members">
+                          <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="" >
+                          <h4>{{ member.name }}</h4>
+                      </div>
+                      <p class="text-muted">{{ member.position }}</p>
+                  </div>
                 {% endfor %}
+              </div>
             </div>
 
             <!-- alumni -->
-            <div class="row">
+            <div class="row" id="alumni">
                 <h3>Forever LSF-ers</h3>
                 <hr/>
+                <div class="row row-eq-height">
                 {% for member in page.alumni %}
-                  <div class="col-sm-2">
-                      <div class="team-member">
+                  <div class="col-sm-2 text-center team-member">
+                      <div class="members">
                           <img src="{{ site.baseurl }}/img/people/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
                           <h5 >{{ member.name }}</h5>
-                          <p class="text-muted">{{ member.project }}</p>
                       </div>
+                      <p class="text-muted">{{ member.project }}</p>
                   </div>
                 {% endfor %}
+              </div>
             </div>
 
             <!-- our supporters -->
@@ -240,11 +236,11 @@ accolades:
               <h3>Supporters</h3>
               <hr/>
               {% for item in page.supporters %}
-                <div class="col-sm-2">
-                    <div class="team-member supporters">
+                <div class="col-sm-2 text-center">
+                    <div class="supporters vcenter">
                         <img src="{{ site.baseurl }}/img/logos/{{ item.pic }}" class="img-responsive" alt="" style="border: none;">
-                        <h4>{{ item.name }}</h4>
                     </div>
+                    <h5 class="supporters-h5">{{ item.name }}</h4>
                 </div>
               {% endfor %}
             </div>
