@@ -1049,3 +1049,19 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .accordion-toggle .fa-plus-square{
+    display: none;
+  }
+
+  .accordion-toggle .fa-minus-square{
+    display: inline;
+  }
+
+  .accordion-toggle.collapsed .fa-plus-square{
+    display: inline;
+  }
+
+  .accordion-toggle.collapsed .fa-minus-square{
+    display: none;
+  }
