@@ -769,6 +769,10 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+.team-member h5{
+    text-transform: capitalize;
+}
+
 aside.clients img {
     margin: 50px auto;
 }
@@ -836,6 +840,14 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+section#whycodeheader {
+    background-image: url('/img/team-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    filter: grayscale(100%);
 }
 
 footer {
@@ -981,4 +993,20 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+.testimonial_subtitle{
+    color: #0aaa7a;
+    font-size: 12px;
+}
+  .testimonial_btn{
+    background-color: #373d4b !important;
+    color: #fff !important;
+ }
+ .seprator {
+    height: 2px;
+    width: 56px;
+    background-color: #0aaa7a;
+    margin: 7px 0 10px 0;
 }
