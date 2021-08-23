@@ -150,6 +150,11 @@ h6 {
     background: none;
 }
 
+.navbar-fixed-top.navbar-shrink .bg-none,
+.navbar-fixed-top.navbar-shrink li:hover {
+    background-color: #222;;
+}
+
 .btn-danger {
     border-color: #{{ site.data.template.color.danger }};
     text-transform: uppercase;
@@ -342,6 +347,8 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
     background-color: #{{ site.data.template.color.secondary }};
 }
+
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -749,6 +756,16 @@ section h3.section-subheading {
     height: 100px;
 }
 
+.supporters img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.supporters-h5 {
+    text-transform: capitalize !important;
+    text-align: center;
+}
+
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -771,6 +788,14 @@ section h3.section-subheading {
 
 .team-member h5{
     text-transform: capitalize;
+}
+
+#alumni .members {
+    height: 80%;
+}
+
+#team .members {
+    height: 90%;
 }
 
 aside.clients img {
@@ -1010,3 +1035,17 @@ body {
     background-color: #0aaa7a;
     margin: 7px 0 10px 0;
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
