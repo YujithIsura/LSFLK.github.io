@@ -35,6 +35,18 @@ blockquote footer {
     color: #{{ site.data.template.color.primary }};
 }
 
+.text-danger {
+    color: #e74c3c;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
 .cards div {
     padding: 10px 15px
 }
@@ -129,6 +141,11 @@ h6 {
     padding-bottom:6rem;
 }
 
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -139,6 +156,10 @@ h6 {
 
 .bg-light-danger {
     background-color: #{{ site.data.template.color.danger-light }};;
+}
+
+.bg-danger {
+    background-color: #{{ site.data.template.color.danger }};;
 }
 
 .bg-darkest-gray {
@@ -863,10 +884,6 @@ section#contact:-ms-input-placeholder {
     color: #bbb;
 }
 
-section#contact .text-danger {
-    color: #e74c3c;
-}
-
 section#whycodeheader {
     background-image: url('/img/team-1.jpeg');
     background-size: cover;
@@ -1065,3 +1082,31 @@ body {
   .accordion-toggle.collapsed .fa-minus-square{
     display: none;
   }
+
+.hear-fellow {
+    background-image: url('{{ site.baseurl }}/img/members.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.become-fellow {
+    background-image: url('{{ site.baseurl }}/img/onboard.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.meet-mentors {
+    background-image: url('{{ site.baseurl }}/img/mentors.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.felowships-scroller-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
