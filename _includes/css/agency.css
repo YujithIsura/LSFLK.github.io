@@ -19,6 +19,11 @@ blockquote footer {
     width: 100%;
 }
 
+.equal-height{
+    display: flex;
+    display: -webkit-flex;
+}
+
 .padding-bottom-50 {
     padding-bottom: 50px;
 }
@@ -892,6 +897,10 @@ section#whycodeheader {
     filter: grayscale(100%);
 }
 
+section#blogs {
+
+}
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -1109,4 +1118,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.blogs-block {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-transform: capitalize;
+}
+
+.blog-author {
+    position: absolute;
+    bottom: 30px;
 }
