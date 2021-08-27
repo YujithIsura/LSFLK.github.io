@@ -897,8 +897,12 @@ section#whycodeheader {
     filter: grayscale(100%);
 }
 
-section#blogs {
+section#mentors {
+    padding: 0;;
+}
 
+section.top-banner {
+    padding-bottom: 0;
 }
 
 footer {
@@ -1063,9 +1067,10 @@ body {
 }
 
 .vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .row-eq-height {
@@ -1130,4 +1135,18 @@ body {
 .blog-author {
     position: absolute;
     bottom: 30px;
+}
+
+.cfs-banner {
+    background-image: url('{{ site.baseurl }}/img/lion.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;   
+}
+
+.mentors-banner {
+    background-image: url('{{ site.baseurl }}/img/mentors.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;   
 }
