@@ -235,14 +235,16 @@ accolades:
             <div class="row">
               <h3>Supporters</h3>
               <hr/>
-              {% for item in page.supporters %}
-                <div class="col-sm-2 text-center">
-                    <div class="supporters vcenter">
-                        <img src="{{ site.baseurl }}/img/logos/{{ item.pic }}" class="img-responsive" alt="" style="border: none;">
-                    </div>
-                    <h5 class="supporters-h5">{{ item.name }}</h4>
-                </div>
-              {% endfor %}
+              <div class="row equal-height">
+                {% for item in page.supporters %}
+                  <div class="col-sm-2 text-center">
+                      <div class="supporters vcenter">
+                          <img src="{{ site.baseurl }}/img/logos/{{ item.pic }}" class="img-responsive" alt="" style="border: none;">
+                      </div>
+                      <h5 class="supporters-h5">{{ item.name }}</h4>
+                  </div>
+                {% endfor %}
+              </div>
             </div>
 
         </div>
