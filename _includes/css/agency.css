@@ -123,6 +123,15 @@ h6 {
     margin-bottom:6rem;
 }
 
+.my-auto {
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
 .pt-3 {
     padding-top: 3rem;
 }
@@ -139,6 +148,14 @@ h6 {
 
 .pt-6 {
     padding-top: 6rem;
+}
+
+.pb-3 {
+    padding-bottom:3rem;
+}
+
+.pb-6 {
+    padding-bottom:6rem;
 }
 
 .py-6 {
@@ -165,6 +182,10 @@ h6 {
 
 .bg-danger {
     background-color: #{{ site.data.template.color.danger }};;
+}
+
+.bg-dark-gray {
+    background-color: #cac9c9;
 }
 
 .bg-darkest-gray {
@@ -901,6 +922,14 @@ section#mentors {
     padding: 0;;
 }
 
+section#projects {
+    padding-top: 0;
+}
+
+section#projects .btn{
+    min-width: 60%;
+}
+
 section.top-banner {
     padding-bottom: 0;
 }
@@ -1073,6 +1102,14 @@ body {
     height: 100%;
 }
 
+.vcenter-desc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1149,4 +1186,11 @@ body {
     background-size: cover;
     background-position: center;
     height: 100%;   
+}
+
+.header-slider {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
