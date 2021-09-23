@@ -6,8 +6,8 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color.secondary-dark }};
+    font-family: {{site.data.template.font.primary}} !important;
+    color: #333;
 }
 
 blockquote footer {
@@ -67,8 +67,8 @@ blockquote footer {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 p.large {
@@ -84,14 +84,16 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.black }};
+    font-family: {{ site.data.template.font.primary }};
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.data.template.color.secondary }};
+    color: #{{ site.data.template.color.primary }};
+    cursor: grab;
 }
 
 h1,
@@ -103,6 +105,14 @@ h6 {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .mt-3 {
@@ -132,12 +142,21 @@ h6 {
     margin-bottom:auto;
 }
 
+.mx-auto {
+    margin-left: auto;
+    margin-right:auto;
+}
+
 .p-10 {
     padding: 10px;
 }
 
 .pt-0 {
     padding-top: 0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
 }
 
 .pr-0 {
@@ -181,6 +200,14 @@ h6 {
 .py-6 {
     padding-top: 6em;
     padding-bottom:6rem;
+}
+
+.pl-6 {
+    padding-left: 6rem;
+}
+
+.pr-6 {
+    padding-right: 6rem;
 }
 
 .px-6 {
@@ -1123,6 +1150,12 @@ body {
     height: 100%;
 }
 
+.vcenter-no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .vcenter-desc {
     display: flex;
     justify-content: center;
@@ -1186,7 +1219,7 @@ body {
 .blogs-block {
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 200px;
     text-transform: capitalize;
 }
 
@@ -1282,4 +1315,14 @@ body {
     position: absolute;
     width: 98%;
     margin-top: -20px;
+}
+
+.round-bg-number {
+    background-color: #8e1003;
+    color: white;
+    border-radius: 50px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 1.8;
 }
