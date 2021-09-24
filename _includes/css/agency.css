@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    font-size: 18.75px;
     font-family: {{site.data.template.font.primary}} !important;
     color: #333;
 }
@@ -67,7 +68,7 @@ blockquote footer {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
