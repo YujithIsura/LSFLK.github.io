@@ -1028,6 +1028,36 @@ ul.social-buttons li a:active {
     background-color: #{{ site.data.template.color.primary }};
 }
 
+ul.social-follow {
+    margin-bottom: 0;
+}
+
+.social-follow li{
+    margin-right: 20px;
+}
+
+ul.social-follow li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 80px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-follow li a:hover,
+ul.social-follow li a:focus,
+ul.social-follow li a:active {
+    background-color: #{{ site.data.template.color.primary }};
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -1326,4 +1356,54 @@ body {
     height: 70px;
     text-align: center;
     line-height: 1.8;
+}
+
+.social-icons li{
+    display: inline;
+    margin-right: 20px;
+}
+
+// Accordian Styles
+
+ul.jekyllcodex_accordion {position: relative; margin: 1.4rem 0!important; border-bottom: 1px solid rgba(0,0,0,0.25); padding-bottom: 0;}
+ul.jekyllcodex_accordion li {border-top: 1px solid rgba(0,0,0,0.25); list-style: none; margin-left: 0;}
+ul.jekyllcodex_accordion li input {display: none;}
+ul.jekyllcodex_accordion li label {display: block; cursor: pointer; padding: 0.75rem 2.4rem 0.75rem 0; margin: 0;}
+ul.jekyllcodex_accordion li div {display: none; padding-bottom: 1.2rem;}
+ul.jekyllcodex_accordion li input:checked + label {font-weight: bold;}
+ul.jekyllcodex_accordion li input:checked + label + div {display: block;}
+ul.jekyllcodex_accordion li label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
+ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45deg);}
+
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
 }
