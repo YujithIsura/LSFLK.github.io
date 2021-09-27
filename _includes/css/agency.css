@@ -1407,3 +1407,7 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #EEEEEE;
 }
+
+.panel-body {
+    line-height: 2;
+}
