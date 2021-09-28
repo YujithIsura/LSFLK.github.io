@@ -476,6 +476,41 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/lsfback.jpeg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -862,40 +897,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/lsfback.jpeg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-}
-
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
-}
 
 section#contact {
     background-color: #222;
