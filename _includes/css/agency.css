@@ -444,7 +444,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 
-
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -976,8 +975,19 @@ section#projects {
     padding-bottom: 0;
 }
 
+section#blogs .panel-footer{
+    height: 150px;
+}
+
 section#projects .btn{
     min-width: 60%;
+}
+
+section#get-involved {
+    min-height: 50vh; 
+    background-image: url(/img/volunteers_group.jpg); 
+    background-size: cover; 
+    background-position-y: -200px;
 }
 
 section.top-banner {
@@ -1412,3 +1422,25 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
 .panel-body {
     line-height: 2;
 }
+
+@media(max-width:540px){
+    html {
+        position: absolute !important;
+    }
+    section{
+        background-position-y: unset !important;
+    }
+
+    section#blogs .panel-footer{
+        height: unset !important;
+    }
+
+    section#blogs .blog-author{
+        display: none !important;
+    }
+
+    #carousel-fellowships{
+        display: none !important;
+    }
+}
+
