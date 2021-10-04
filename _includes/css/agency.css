@@ -1429,6 +1429,7 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
     }
     section{
         background-position-y: unset !important;
+        padding-left: 10px;
     }
 
     section#blogs .panel-footer{
@@ -1439,8 +1440,32 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
         display: none !important;
     }
 
+    section.topsec {
+        padding-top: 60px !important;
+    }
+
+    section.topsec .row{
+        padding-top: 50px !important;
+    }
+
     #carousel-fellowships{
         display: none !important;
+    }
+    .team-member p {
+        margin-top: 10px !important;
+    }
+    #portfolio .col-sm-3{
+        width: 100%;
+    }
+    #portfolio .col-sm-2{
+        width: 50%;
+    }
+    .pl-5{
+        padding-left: 0;
+    }
+    .flip-card{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
